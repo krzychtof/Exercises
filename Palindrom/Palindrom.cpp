@@ -19,7 +19,7 @@ int main()
         "mikakika"
     };
 
-    for (auto elem : palindroms) 
+    for (const auto & elem : palindroms) 
     {    
         if(isPalindrome(elem)) 
         {
