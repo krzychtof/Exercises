@@ -1,7 +1,7 @@
-#include <string>
-#include <iostream>
-#include <vector>
 #include <algorithm>
+#include <iostream>
+#include <string>
+#include <vector>
 
 bool isPalindrome(const std::string & text)
 {
