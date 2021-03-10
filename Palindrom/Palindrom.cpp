@@ -5,19 +5,28 @@
 
 bool isPalindrome(const std::string & text)
 {
-    return equal(text.begin(), text.begin() + text.size()/2, text.rbegin());
+    return std::equal(text.cbegin(), text.cbegin() + text.size()/2, text.crbegin());
 }
 
 int main()
 {
-    std::vector<std::string> palindroms {
-        "kajak", "abacada", "ala", "neveroddoreven", "mikakika"
-        };
+    std::vector<std::string> palindroms 
+    {
+        "kajak", 
+        "abacada", 
+        "ala", 
+        "neveroddoreven", 
+        "mikakika"
+    };
 
-    for (auto elem : palindroms) {
-        if(isPalindrome(elem)) {
+    for (auto elem : palindroms) 
+    {    
+        if(isPalindrome(elem)) 
+        {
             std::cout << "Is a palindrome\n";
-        }else{ 
+        }
+        else
+        {
             std::cout << "Isn`t a palindrome\n";
         }
     }
